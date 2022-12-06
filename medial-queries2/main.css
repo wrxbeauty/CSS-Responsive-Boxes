@@ -1,3 +1,38 @@
+* {
+  border: 1px solid magenta;
+}
+
 body {
   background: papayawhip;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+main {
+  width: 90%;
+}
+
+aside {
+  display:flex;
+  width: 90%;
+  justify-content: space-evenly;
+}
+
+aside > div {
+  margin: 1em;
+  flex-grow: 10;
+}
+
+header, .wrapper, aside, footer {
+  margin: 1em;
 }
